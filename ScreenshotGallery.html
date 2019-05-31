@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" href="ScreenshotIndex.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">  
+
+</head>
+
+<body>
+    <div id="page_wrap">
+	
+	    <!-- nav-->
+	
+             <nav id="nav">
+					<ul>
+						<li><a href="ScreenshotIndex.html" ><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                                                                                                                         
+						<li><a href="ScreenshotGallery.html" class="active" ><i class="fa fa-camera-retro" aria-hidden="true"></i></a></li>
+						
+						<li><a href="ScreenshotGeneric.html" ><i class="fa fa-file-text-o" aria-hidden="true"></i></a></li>
+					</ul>
+				</nav>
+				
+		<!-- Main -->
+             <section id="main">
+               <!-- Header -->
+               
+			   <header id="header">
+					<div>Snapshot <span>by KARTIK</span></div>
+				</header>
+			     
+				 <!-- Gallery section -->
+				 
+				 <section class="gallery">
+				    <header id="header">
+                       <h1>Gallery</h1>
+					   <ul class="tabs">
+						 <li><button id="All" class="button button2">ALL</button></li>
+						 <li><button id="people" class="button button2">People</button></li>
+						 <li><button id="places" class="button button2">Places</button></li>
+						 <li><button id="things" class="button button2">Things</button></li>
+						</ul>
+     			   </header>
+				  <div class="content">
+				  
+				  </div>
+				 
+				 </section>
+			</section>			 
+	     <!-- Script -->			
+				<script type="text/javascript">
+				document.getElementById("All").onclick=handler;
+				
+				function  handler(){
+	
+                         	document.getElementsByClassName("content").innerHTML=
+	                                    '<div class="media">
+											<a href="images/fulls/01.jpg"><img src="images/thumbs/01.jpg" alt="" title="This right here is a caption." /></a>
+										</div>
+										<div class="media">
+											<a href="images/fulls/05.jpg"><img src="images/thumbs/05.jpg" alt="" title="This right here is a caption." /></a>
+										</div>
+										<div class="media">
+											<a href="images/fulls/09.jpg"><img src="images/thumbs/09.jpg" alt="" title="This right here is a caption." /></a>
+										</div>
+										<div class="media">
+											<a href="images/fulls/02.jpg"><img src="images/thumbs/02.jpg" alt="" title="This right here is a caption." /></a>
+										</div>
+										<div class="media">
+											<a href="images/fulls/06.jpg"><img src="images/thumbs/06.jpg" alt="" title="This right here is a caption." /></a>
+										</div>
+										<div class="media">
+											<a href="images/fulls/10.jpg"><img src="images/thumbs/10.jpg" alt="" title="This right here is a caption." /></a>
+										</div>
+										<div class="media">
+											<a href="images/fulls/03.jpg"><img src="images/thumbs/03.jpg" alt="" title="This right here is a caption." /></a>
+										</div>
+										<div class="media">
+											<a href="images/fulls/07.jpg"><img src="images/thumbs/07.jpg" alt="" title="This right here is a caption." /></a>
+										</div>'
+	
+};
+				
+				</script>
+    </div>				
+</body>
